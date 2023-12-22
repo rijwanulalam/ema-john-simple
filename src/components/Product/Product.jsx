@@ -1,9 +1,11 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import "./Product.css";
 
 const Product = (props) => {
   // console.log(props)
-  const { name, img, price, quantity, ratings, seller, id } = props.product;
+  // eslint-disable-next-line react/prop-types
+  const { name, img, price, quantity, ratings, seller } = props.product;
 
   const handleProductCart = props.handleProductCart;
   return (
